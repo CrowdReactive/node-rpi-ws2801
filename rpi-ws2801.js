@@ -1,5 +1,5 @@
 var microtime = require('microtime');
-var SPI       = require('spi');
+var SPI       = require('pi-spi');
 
 /*
  A node.js library to control a WS2801 RGB LED stripe via SPI with your Raspberry Pi
@@ -45,9 +45,8 @@ RPiWS2801.prototype = {
     }
     
     try{
-      this.spi = new SPI.Spi(this.spiDevice, {'maxSpeed' : this.maxSpeed}, function(s){
-          s.open();
-        });
+      this.spi = SPI.initialize(this.spiDevice);
+      this.spi.clockSpeed(this.maxSpeed);
     } catch (err) {
       console.error("error opening SPI device "+this.spiDevice, err);
       return false;
@@ -126,7 +125,7 @@ RPiWS2801.prototype = {
         adjustedBuffer[i]=this.gammatable[buffer[i]];
       }
 
-      this.spi.write(adjustedBuffer);
+      this.spi.write(adjustedBuffer, function () {});
       
       this.lastWriteTime = microtime.now();
       return true;

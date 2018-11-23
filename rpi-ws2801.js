@@ -111,7 +111,7 @@ RPiWS2801.prototype = {
    * disconnect from SPI port
    */
   disconnect : function(){
-    if (this.spi) this.spi.close();
+    if (this.spi) this.spi.close(function () {});
   },
 
   /*

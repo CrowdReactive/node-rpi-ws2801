@@ -74,6 +74,7 @@
     "want_separate_host_toolset": 1,
     "nodedir": "/home/pi/.node-gyp/10.13.0",
     "standalone_static_library": 1,
+    "target": "10.13.0",
     "cache_lock_stale": "60000",
     "ham_it_up": "",
     "legacy_bundling": "",

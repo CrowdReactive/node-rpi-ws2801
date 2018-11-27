@@ -1,32 +1,27 @@
 {
-  "_args": [
-    [
-      "microtime@2.1.8",
-      "/home/pi/led-library"
-    ]
-  ],
-  "_from": "microtime@2.1.8",
+  "_from": "microtime@^2.1.8",
   "_id": "microtime@2.1.8",
   "_inBundle": false,
   "_integrity": "sha1-tDxMWrE+Un4XM3DQMG2eCku/QQ0=",
   "_location": "/microtime",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "microtime@2.1.8",
+    "raw": "microtime@^2.1.8",
     "name": "microtime",
     "escapedName": "microtime",
-    "rawSpec": "2.1.8",
+    "rawSpec": "^2.1.8",
     "saveSpec": null,
-    "fetchSpec": "2.1.8"
+    "fetchSpec": "^2.1.8"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/microtime/-/microtime-2.1.8.tgz",
-  "_spec": "2.1.8",
-  "_where": "/home/pi/led-library",
+  "_shasum": "b43c4c5ab13e527e173370d0306d9e0a4bbf410d",
+  "_spec": "microtime@^2.1.8",
+  "_where": "/home/pi/node-rpi-ws2801",
   "author": {
     "name": "Wade Simmons",
     "email": "wade@wades.im",
@@ -35,11 +30,13 @@
   "bugs": {
     "url": "https://github.com/wadey/node-microtime/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "bindings": "1.3.x",
     "nan": "2.10.x",
     "prebuild-install": "^2.1.0"
   },
+  "deprecated": false,
   "description": "Get the current time in microseconds",
   "devDependencies": {
     "clang-format": "^1.2.1",

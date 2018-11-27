@@ -34,13 +34,13 @@ CFLAGS_CC_Debug := \
 	-std=gnu++0x
 
 INCS_Debug := \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/include/node \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/src \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/openssl/config \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/openssl/openssl/include \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/uv/include \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/zlib \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/v8/include \
+	-I/home/pi/.node-gyp/iojs-2.0.11/include/node \
+	-I/home/pi/.node-gyp/iojs-2.0.11/src \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/openssl/config \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/openssl/openssl/include \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/uv/include \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/zlib \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/v8/include \
 	-I$(srcdir)/../nan
 
 DEFS_Release := \
@@ -72,13 +72,13 @@ CFLAGS_CC_Release := \
 	-std=gnu++0x
 
 INCS_Release := \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/include/node \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/src \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/openssl/config \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/openssl/openssl/include \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/uv/include \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/zlib \
-	-I/home/pi/.electron-gyp/.node-gyp/iojs-2.0.11/deps/v8/include \
+	-I/home/pi/.node-gyp/iojs-2.0.11/include/node \
+	-I/home/pi/.node-gyp/iojs-2.0.11/src \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/openssl/config \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/openssl/openssl/include \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/uv/include \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/zlib \
+	-I/home/pi/.node-gyp/iojs-2.0.11/deps/v8/include \
 	-I$(srcdir)/../nan
 
 OBJS := \

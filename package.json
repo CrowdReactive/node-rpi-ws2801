@@ -7,9 +7,14 @@
     "microtime": "^2.1.8",
     "pi-spi": "^1.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "fs-extra": "^7.0.1",
+    "minimist": "^1.2.0",
+    "node-gyp": "^3.8.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "node prebuild.js"
   },
   "repository": {
     "type": "git",
